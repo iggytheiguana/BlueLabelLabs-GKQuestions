@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">PMP Prep</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="text_get_started">Tap to Get Started</string>
+    <string name="text_ques">Question </string>
+    <string name="text_ques_1"> of 15</string>
+    <string name="text_explan">Explanation</string>
+    
+    <string name="text_submit">Submit</string>
+    <string name="text_restart">Restart</string>
+    <string name="text_next">Next</string>
+    <string name="text_but_explain">Explain</string>
+    
+    <string name="but_start_over">Start\nOver</string>
+    <string name="but_pmp">PMP Class\nDiscount</string>
+    
+    <string name="text_bootom">PMP,PMI and PMBOK Guide are registered marks of the Project Management Institute, Inc</string>
+</resources>

@@ -14,6 +14,9 @@ public interface Constant {
 	String[] correctAns = { "A", "B", "C", "D", "E" };
 
 	public static final String APP_ID = "172552689469417";
+	
+	public static final String FLURRY_ID = "2FYRJSNBVWXTWZSGJYN5";
+	public static final String APP_NAME = "Sec+ Prep";
 
 	static final String[] PERMISSIONS = new String[] { "publish_stream" };
 

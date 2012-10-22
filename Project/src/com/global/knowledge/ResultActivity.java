@@ -1,5 +1,6 @@
 package com.global.knowledge;
 
+import com.flurry.android.FlurryAgent;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -52,6 +53,19 @@ public class ResultActivity extends Activity implements Constant{
 		mTwitter 	= new TwitterApp(this,twitter_consumer_key,twitter_secret_key);
 		mTwitter.setListener(mTwLoginDialogListener);
 		initControl();
+	}
+	
+	protected void onStart()
+	{
+		super.onStart();
+		FlurryAgent.onStartSession(this, Constant.FLURRY_ID);
+		
+	}
+	
+	protected void onStop()
+	{
+		super.onStop();
+		FlurryAgent.onEndSession(this);
 	}
 
 	public void initControl() {

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_ques"
+            android:textColor="@color/blue"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/layoutScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:fadeScrollbars="false"
+        android:layout_weight="10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layouttop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textExplan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_explan"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textQuestion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center|left"
+                    android:text="@string/text_ques"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/layoutQuestion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/radioGroupQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center|left" >
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        style="@style/radio_button" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        style="@style/radio_button" />
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        style="@style/radio_button" />
+
+                    <RadioButton
+                        android:id="@+id/radio4"
+                        style="@style/radio_button" />
+
+                    <RadioButton
+                        android:id="@+id/radio5"
+                        style="@style/radio_button" />
+                </RadioGroup>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/butSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_click"
+            android:onClick="callNextButton"
+            android:text="@string/text_submit"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/butRestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/button_click"
+            android:onClick="callRestartButton"
+            android:text="@string/text_restart"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

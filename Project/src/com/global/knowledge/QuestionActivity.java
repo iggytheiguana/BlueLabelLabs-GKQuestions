@@ -1,6 +1,7 @@
 package com.global.knowledge;
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
@@ -26,7 +27,9 @@ import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.flurry.android.FlurryAgent;
 import com.global.knowledge.Database.DBAdapter;
+import com.sbstrm.appirater.Appirater;
 
 public class QuestionActivity extends Activity implements Constant,
 		OnClickListener {
@@ -51,10 +54,26 @@ public class QuestionActivity extends Activity implements Constant,
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.question);
+		
+		Appirater.appLaunched(this);
 
 		if(DEBUG) Log.d("ONCREATE  :  ", "OK");
 		mainHashMaps = new Vector<Hashtable<String, Object>>();
 		initControl();
+	}
+	
+	
+	protected void onStart()
+	{
+		super.onStart();
+		FlurryAgent.onStartSession(this, Constant.FLURRY_ID);
+		
+	}
+	
+	protected void onStop()
+	{
+		super.onStop();
+		FlurryAgent.onEndSession(this);
 	}
 
 	public void initControl() {

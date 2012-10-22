@@ -14,9 +14,9 @@
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_result_logo" />
+            android:background="@drawable/bg_result_logo_land_3" />
     </LinearLayout>
 
     <LinearLayout
@@ -97,7 +97,7 @@
                         android:gravity="center"
                         android:text="Share Your Score"
                         android:textColor="@color/light_blue"
-                        android:textSize="18sp" />
+                        android:textSize="14sp" />
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -114,7 +114,7 @@
 
                         <Button
                             android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_height="67dp"
                             android:layout_marginLeft="10dp"
                             android:background="@drawable/button_twitter"
                             android:onClick="callTwitter" />
@@ -141,7 +141,7 @@
                         android:layout_height="wrap_content"
                         android:text="Try 15 more questions"
                         android:textColor="@color/light_blue"
-                        android:textSize="18sp" />
+                        android:textSize="14sp" />
 
                     <Button
                         android:layout_width="60dp"
