@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bg_splash"
+    android:background="@drawable/bg_splash_2"
     android:orientation="vertical" >
 
     <RelativeLayout
@@ -14,39 +14,43 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
         android:layout_weight="0.17" >
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
             android:layout_marginRight="50dp"
             android:layout_marginTop="6dp"
             android:background="@drawable/button_play"
             android:gravity="right"
             android:onClick="callQuestion" >
 
-<!--             <TextView -->
-<!--                 android:id="@+id/textView1" -->
-<!--                 android:layout_width="wrap_content" -->
-<!--                 android:layout_height="wrap_content" -->
-<!--                 android:gravity="center_horizontal" -->
-<!--                 android:paddingRight="50dp" -->
-<!--                 android:paddingTop="3dp" -->
-<!--                 android:text="@string/text_get_started" -->
-<!--                 android:textColor="@android:color/white" -->
-<!--                 android:textSize="20sp" /> -->
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingRight="50dp"
+                android:paddingTop="3dp"
+                android:text="@string/text_get_started"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
         </LinearLayout>
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/text_bootom"
-        android:textColor="@color/blue"
-        android:textSize="7sp" />
+<!--     <TextView -->
+<!--         android:id="@+id/textView1" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:gravity="center" -->
+<!--         android:text="@string/text_bootom" -->
+<!--         android:textColor="@color/blue" -->
+<!--         android:textSize="7sp" /> -->
 
 </LinearLayout>

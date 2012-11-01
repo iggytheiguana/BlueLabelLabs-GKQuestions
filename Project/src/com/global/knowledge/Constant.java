@@ -23,6 +23,6 @@ public interface Constant {
 	public static String twitter_consumer_key = "uoG8vtpVT0jalxwVfhv7Q";
 	public static String twitter_secret_key = "dVK9IfJ3D4Qwety1mIljLmH1gCylEomY06Si1vaRHw";
 	
-	public String link = "http://www.globalknowledge.com/training/generic.asp?pageid=3196&country=United+States";
+	public String link = "http://www.globalknowledge.com/training/olm/go.asp?find=secapp_discount&country=United+States";
 	
 }

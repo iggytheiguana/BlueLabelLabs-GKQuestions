@@ -84,11 +84,23 @@ public class ResultActivity extends Activity implements Constant{
 		if(DEBUG) Log.w("PER  :   ", ""+per);
 		textPer = (TextView)findViewById(R.id.textPer);
 		textPer.append(per+"%");
-		if((int)per == 100)
-			butCongra.setVisibility(0);
 		
-		if((int)per <  80)
-		butPMP.setVisibility(4);
+		if ((int)per >= 80)
+		{
+			butCongra.setVisibility(0);
+		}
+		else
+		{
+			butCongra.setVisibility(4);
+		}
+		
+//		if((int)per == 100)
+//		{
+//			butCongra.setVisibility(0);
+//		}
+		
+//		if((int)per <  80)
+//		butPMP.setVisibility(4);
 	}
 
 	public void callFaceBook(View view) {
