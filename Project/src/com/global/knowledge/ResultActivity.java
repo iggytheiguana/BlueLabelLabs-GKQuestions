@@ -13,6 +13,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -115,12 +116,19 @@ public class ResultActivity extends Activity implements Constant{
 		}
 		}
 	}
+	
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, Intent data)
+	{
+		super.onActivityResult(requestCode, resultCode, data);
+		mFacebook.authorizeCallback(requestCode, resultCode, data);
+	}
 
 	private void loginAndPostToWall(Boolean isWall) {
 		mFacebook.authorize(this, PERMISSIONS, new LoginDialogListener(isWall));
 	}
 	public void callFaceBookPopup() {
-		String msg = "I just scored "+count+ "/15 on Global Knowledge's PMP Practice Quiz."; 
+		String msg = "I just scored "+count+ "/15 on Global Knowledge's Security+ Practice Quiz. http://www.globalknowledge.com/securityapp"; 
 		Bundle params = new Bundle();
 		params.putString("message",msg);
 		params.putString("description", "test test test");
@@ -137,7 +145,7 @@ public class ResultActivity extends Activity implements Constant{
 		if(!isConnection){
 		if (mTwitter.hasAccessToken()) {
 			if(DEBUG) Log.d("YES", "OK");
-			String msg = "I just scored "+count+ "/15 on Global Knowledge's PMP Practice Quiz."; 
+			String msg = "I just scored "+count+ "/15 on Global Knowledge's Security+ Practice Quiz. http://www.globalknowledge.com/securityapp"; 
 			postToTwitter(msg);
 		} else {
 			if(DEBUG) Log.d("NO", "OK");
@@ -216,9 +224,11 @@ public class ResultActivity extends Activity implements Constant{
 		}
 
 		public void onFacebookError(FacebookError error) {
+			Log.e("Facebook Error", error.toString());
 		}
 
 		public void onError(DialogError error) {
+			Log.e("Facebook Error", error.toString());
 		}
 
 		public void onCancel() {
@@ -263,7 +273,7 @@ public class ResultActivity extends Activity implements Constant{
 		public void onComplete(String value) {
 			String username = mTwitter.getUsername();
 			username = (username.equals("")) ? "No Name" : username;
-			postToTwitter("I just scored "+count+ "/15 on Global Knowledge's PMP Practice Quiz.");
+			postToTwitter("I just scored "+count+ "/15 on Global Knowledge's Security+ Practice Quiz. http://www.globalknowledge.com/securityapp");
 			Toast.makeText(getApplicationContext(),
 					"Connected to Twitter as " + username, Toast.LENGTH_LONG)
 					.show();
@@ -282,10 +292,14 @@ public class ResultActivity extends Activity implements Constant{
 			try {
 				org.json.JSONObject json = Util.parseJson(response);
 				final String src = json.getString("src");
+				Log.d("Facebook",src);
+				
 			} catch (FacebookError e) {
+				Log.e("Facebook Error", e.toString());
 			} catch (org.json.JSONException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				Log.e("Facebook Error", e.toString());
 			}
 		}
 	}

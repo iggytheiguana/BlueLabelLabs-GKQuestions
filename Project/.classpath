@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="libs/commons-codec-1.4.jar"/>
 	<classpathentry kind="lib" path="libs/commons-logging-1.1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="/Users/bobby/Documents/dev/Flurry Android SDK/GKQuestions/Flurry Android SDK vAndroid 3.0.4/FlurryAgent.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/bobby/Documents/dev/BlueLabelLabs-AndroidGKQuestions/Project/libs/com_facebook_android.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
