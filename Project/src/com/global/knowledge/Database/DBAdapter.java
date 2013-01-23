@@ -18,7 +18,7 @@ import com.global.knowledge.Constant;
 public class DBAdapter extends SQLiteOpenHelper implements Constant {
 	public static String Lock = "DBlock";
 	private static String DB_PATH = "";
-	private static final String DB_NAME = "Global_DB.s3db";
+	private static final String DB_NAME = "CCNA.s3db";
 	private SQLiteDatabase myDataBase;
 	private final Context myContext;
 	private static DBAdapter mDBConnection;

@@ -34,7 +34,7 @@ import com.sbstrm.appirater.Appirater;
 public class QuestionActivity extends Activity implements Constant,
 		OnClickListener {
 
-	private static final boolean DEBUG = false;
+	private static final boolean DEBUG = true;
 	DBAdapter dbAdapter;
 	public List<Integer> numberList = new ArrayList<Integer>();
 	public TextView textQuestion, textTitle, textExplan;
