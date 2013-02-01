@@ -168,12 +168,27 @@ public class QuestionActivity extends Activity implements Constant,
 		radioButton[0].setText(Html.fromHtml(cursor.getString(2).toString()));
 		radioButton[1].setText(Html.fromHtml(cursor.getString(3).toString()));
 		radioButton[2].setText(Html.fromHtml(cursor.getString(4).toString()));
-		radioButton[3].setText(Html.fromHtml(cursor.getString(5).toString()));
+		
+		String element1 = cursor.getString(5);
+		if (element1 == null || element1.length() <0)
+		{
+			radioButton[3].setVisibility(View.GONE);
+		}
+		else
+		{
+			radioButton[3].setText(element1);
+			radioButton[3].setVisibility(View.VISIBLE);
+		}
+		
+		//radioButton[3].setText(Html.fromHtml(cursor.getString(5).toString()));
+		
+		
 		String element = cursor.getString(6);
 		if (element == null || element.length() < 0) {
 			radioButton[4].setVisibility(View.GONE);
 		} else {
 			radioButton[4].setText(element);
+			radioButton[4].setVisibility(View.VISIBLE);
 		}
 		correctAnswer = cursor.getString(7).toString();
 		explanation = cursor.getString(8).toString();
