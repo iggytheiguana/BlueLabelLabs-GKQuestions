@@ -24,6 +24,6 @@ public interface Constant {
 	public static String twitter_consumer_key = "mqcfnW543DeZ8IRVFgJQ";
 	public static String twitter_secret_key = "zcdIyO7QGtHk8eOGwBLEUBnh6w4JAeYcYdWvrWUvU";
 	
-	public String link = "http://www.globalknowledge.com/training/olm/go.asp?find=secapp_discount&country=United+States";
+	public String link = "http://www.globalknowledge.com/ccnaappdiscount";
 	
 }
