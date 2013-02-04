@@ -1,4 +1,4 @@
-package com.global.knowledge;
+package com.global.knowledge.ccna;
 
 public interface Constant {
 

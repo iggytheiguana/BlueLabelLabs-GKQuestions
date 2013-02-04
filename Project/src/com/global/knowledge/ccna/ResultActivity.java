@@ -1,4 +1,4 @@
-package com.global.knowledge;
+package com.global.knowledge.ccna;
 
 import com.flurry.android.FlurryAgent;
 import java.io.FileNotFoundException;
