@@ -175,7 +175,7 @@ public class QuestionActivity extends Activity implements Constant,
 		}
 		else
 		{
-			radioButton[2].setText(element2);
+			radioButton[2].setText(Html.fromHtml(element2));
 			radioButton[2].setVisibility(View.VISIBLE);
 		}
 		//radioButton[2].setText(Html.fromHtml(cursor.getString(4).toString()));
@@ -187,7 +187,7 @@ public class QuestionActivity extends Activity implements Constant,
 		}
 		else
 		{
-			radioButton[3].setText(element1);
+			radioButton[3].setText(Html.fromHtml(element1));
 			radioButton[3].setVisibility(View.VISIBLE);
 		}
 		
@@ -198,7 +198,7 @@ public class QuestionActivity extends Activity implements Constant,
 		if (element == null || element.length() < 0) {
 			radioButton[4].setVisibility(View.GONE);
 		} else {
-			radioButton[4].setText(element);
+			radioButton[4].setText(Html.fromHtml(element));
 			radioButton[4].setVisibility(View.VISIBLE);
 		}
 		correctAnswer = cursor.getString(7).toString();
