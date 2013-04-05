@@ -1,4 +1,4 @@
-package com.global.knowledge.ccna;
+package com.global.knowledge.itil;
 
 public interface Constant {
 
@@ -13,16 +13,16 @@ public interface Constant {
 
 	String[] correctAns = { "A", "B", "C", "D", "E" };
 
-	public static final String APP_ID = "198455050220714";
+	public static final String APP_ID = "175294012549061";
 	//TESTpublic static final String APP_ID = "118435714997302";
 	
 	public static final String FLURRY_ID = "6PFFCVY3DGMVFTQJN9H2";
-	public static final String APP_NAME = "CCNA Prep";
+	public static final String APP_NAME = "ITIL Prep";
 
 	static final String[] PERMISSIONS = new String[] { "publish_stream" };
 
-	public static String twitter_consumer_key = "mqcfnW543DeZ8IRVFgJQ";
-	public static String twitter_secret_key = "zcdIyO7QGtHk8eOGwBLEUBnh6w4JAeYcYdWvrWUvU";
+	public static String twitter_consumer_key = "MHcc9dahbDjBqYM3UyEsA";
+	public static String twitter_secret_key = "dko5bIbgtZkfCzEAV03KmY22ILDZROKJaSoRarFNoD4";
 	
 	public String link = "http://www.globalknowledge.com/ccnaappdiscount";
 	

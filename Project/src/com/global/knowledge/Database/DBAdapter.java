@@ -13,7 +13,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.global.knowledge.ccna.Constant;
+import com.global.knowledge.itil.Constant;
 
 public class DBAdapter extends SQLiteOpenHelper implements Constant {
 	public static String Lock = "DBlock";

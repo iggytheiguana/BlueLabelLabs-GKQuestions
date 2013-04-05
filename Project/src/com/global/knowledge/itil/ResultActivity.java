@@ -1,4 +1,4 @@
-package com.global.knowledge.ccna;
+package com.global.knowledge.itil;
 
 import com.flurry.android.FlurryAgent;
 import java.io.FileNotFoundException;
@@ -27,6 +27,7 @@ import com.facebook.android.Facebook;
 import com.facebook.android.Facebook.DialogListener;
 import com.facebook.android.FacebookError;
 import com.facebook.android.Util;
+import com.global.knowledge.itil.R;
 import com.global.knowledge.twitter.TwitterApp;
 import com.global.knowledge.twitter.TwitterApp.TwDialogListener;
 import com.global.knowledge.utils.OtherUtils;

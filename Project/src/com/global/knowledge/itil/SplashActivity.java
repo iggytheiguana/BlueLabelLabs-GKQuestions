@@ -1,7 +1,9 @@
-package com.global.knowledge.ccna;
+package com.global.knowledge.itil;
 
 
 import com.flurry.android.FlurryAgent;
+import com.global.knowledge.itil.R;
+
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
