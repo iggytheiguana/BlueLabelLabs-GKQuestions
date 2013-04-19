@@ -27,7 +27,7 @@ public class SplashActivity extends Activity {
      // Add code to print out the key hash
         try {
             PackageInfo info = getPackageManager().getPackageInfo(
-                    "com.global.knowledge", 
+                    "com.global.knowledge.itil", 
                     PackageManager.GET_SIGNATURES);
             for (Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");
@@ -35,7 +35,7 @@ public class SplashActivity extends Activity {
                 Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
                 }
         } catch (NameNotFoundException e) {
-
+        	Log.e("KeyHash:", "Received NameNotFoundException",e);
         } catch (NoSuchAlgorithmException e) {
 
         }

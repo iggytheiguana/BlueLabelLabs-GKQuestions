@@ -129,7 +129,7 @@ public class ResultActivity extends Activity implements Constant{
 		mFacebook.authorize(this, PERMISSIONS, new LoginDialogListener(isWall));
 	}
 	public void callFaceBookPopup() {
-		String msg = "I just scored "+count+ "/15 on Global Knowledge's CCNA Practice Quiz. http://globalknowledge.com/ccna-app"; 
+		String msg = "I just scored "+count+ "/15 on Global Knowledge's ITIL Practice Quiz. http://globalknowledge.com/itil-app"; 
 		Bundle params = new Bundle();
 		params.putString("message",msg);
 		params.putString("description", "test test test");
@@ -146,7 +146,7 @@ public class ResultActivity extends Activity implements Constant{
 		if(!isConnection){
 		if (mTwitter.hasAccessToken()) {
 			if(DEBUG) Log.d("YES", "OK");
-			String msg = "I just scored "+count+ "/15 on Global Knowledge's CCNA Practice Quiz. http://globalknowledge.com/ccna-app"; 
+			String msg = "I just scored "+count+ "/15 on Global Knowledge's ITIL Practice Quiz. http://globalknowledge.com/itil-app"; 
 			postToTwitter(msg);
 		} else {
 			if(DEBUG) Log.d("NO", "OK");
