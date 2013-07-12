@@ -1,4 +1,4 @@
-package com.global.knowledge.itil;
+package com.global.knowledge.pmp;
 
 public interface Constant {
 
@@ -13,16 +13,16 @@ public interface Constant {
 
 	String[] correctAns = { "A", "B", "C", "D", "E" };
 
-	public static final String APP_ID = "175294012549061";
+	public static final String APP_ID = "172552689469417";
 	//TESTpublic static final String APP_ID = "118435714997302";
 	
 	public static final String FLURRY_ID = "FSY4RC7GFYDGKS9SFN9Y";
-	public static final String APP_NAME = "ITIL Prep";
+	public static final String APP_NAME = "PMP Prep";
 
 	static final String[] PERMISSIONS = new String[] { "publish_stream" };
 
-	public static String twitter_consumer_key = "MHcc9dahbDjBqYM3UyEsA";
-	public static String twitter_secret_key = "dko5bIbgtZkfCzEAV03KmY22ILDZROKJaSoRarFNoD4";
+	public static String twitter_consumer_key = "OpkEhJ8msL3Qfmuf4jON3g";
+	public static String twitter_secret_key = "cnmEuVSlt8uSuwmUu2HGnlcr05Qyx4H3ye0nzNquKk";
 	
 	public String link = "http://www.globalknowledge.com/training/course.asp?pageid=9&courseid=10472&catid=437&country=United+States";
 	

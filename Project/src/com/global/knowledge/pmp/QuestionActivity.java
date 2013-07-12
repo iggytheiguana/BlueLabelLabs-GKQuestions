@@ -1,4 +1,4 @@
-package com.global.knowledge.itil;
+package com.global.knowledge.pmp;
 
 import java.io.IOException;
 
@@ -29,7 +29,7 @@ import android.widget.TextView;
 
 import com.flurry.android.FlurryAgent;
 import com.global.knowledge.Database.DBAdapter;
-import com.global.knowledge.itil.R;
+import com.global.knowledge.pmp.R;
 import com.sbstrm.appirater.Appirater;
 
 public class QuestionActivity extends Activity implements Constant,
@@ -108,7 +108,7 @@ public class QuestionActivity extends Activity implements Constant,
 
 		layoutScroll = (ScrollView)findViewById(R.id.layoutScroll);
 		
-		gererateRandomNumber(84);
+		gererateRandomNumber(260);
 		loadDatabase();
 
 		if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){

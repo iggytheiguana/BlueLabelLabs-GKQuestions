@@ -1,8 +1,8 @@
-package com.global.knowledge.itil;
+package com.global.knowledge.pmp;
 
 
 import com.flurry.android.FlurryAgent;
-import com.global.knowledge.itil.R;
+import com.global.knowledge.pmp.R;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -27,7 +27,7 @@ public class SplashActivity extends Activity {
      // Add code to print out the key hash
         try {
             PackageInfo info = getPackageManager().getPackageInfo(
-                    "com.global.knowledge.itil", 
+                    "com.global.knowledge.pmp", 
                     PackageManager.GET_SIGNATURES);
             for (Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");

@@ -18,7 +18,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.global.knowledge.itil.R;
+import com.global.knowledge.pmp.R;
 import com.global.knowledge.twitter.TwitterApp.TwDialogListener;
 
 public class TwitterDialog extends Dialog {
