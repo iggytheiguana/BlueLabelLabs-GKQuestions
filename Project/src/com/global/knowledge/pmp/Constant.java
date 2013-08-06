@@ -16,7 +16,7 @@ public interface Constant {
 	public static final String APP_ID = "172552689469417";
 	//TESTpublic static final String APP_ID = "118435714997302";
 	
-	public static final String FLURRY_ID = "FSY4RC7GFYDGKS9SFN9Y";
+	public static final String FLURRY_ID = "HF2BQYS7XY55M494T2ZX";
 	public static final String APP_NAME = "PMP Prep";
 
 	static final String[] PERMISSIONS = new String[] { "publish_stream" };
