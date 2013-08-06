@@ -5,7 +5,7 @@
  */
 package com.global.knowledge.twitter;
 
-import twitter4j.http.AccessToken;
+import twitter4j.auth.AccessToken;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;

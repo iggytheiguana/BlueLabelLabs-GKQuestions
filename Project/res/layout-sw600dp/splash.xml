@@ -35,7 +35,7 @@
         android:layout_centerVertical="false"
         android:layout_marginBottom="130dp"
         android:layout_marginRight="50dp"
-        android:layout_marginTop="1190dp"
+        android:layout_marginTop="1250dp"
         android:background="@drawable/button_play"
         android:gravity="right"
         android:onClick="callQuestion" >

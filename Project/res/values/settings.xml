@@ -5,7 +5,7 @@
     	Amazon App Store = http://www.amazon.com/gp/mas/dl/android?p=%s
      -->
     <string name="market_url">market://details?id=%s</string>
-    <string name="app_title">ITIL Prep</string>
+    <string name="app_title">PMP Prep</string>
     <string name="days_until_prompt">30</string>
     <string name="launches_until_prompt">15</string>
     <!-- Set this to 0 to remind every launch -->
